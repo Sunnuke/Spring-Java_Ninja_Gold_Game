@@ -15,7 +15,7 @@ public class NinjaGoldController {
 
 	@RequestMapping("/")
 	public String start() {
-		return;
+		return "start.jsp";
 	}
 	
 	@RequestMapping("/gold")
