@@ -40,7 +40,7 @@
             	<div class="square">
                 	<h2>Farm</h2>
                     <p>(earns 10-20 gold)</p>
-                    <form action="" method="POST">
+                    <form action="/farm" method="POST">
                       <input name="farm" type="hidden" value="1">
                       <button type="submit">Find Gold!</button>
                     </form>
@@ -50,7 +50,7 @@
             	<div class="square">
                 	<h2>Cave</h2>
                     <p>(earns 5-10 gold)</p>
-                    <form action="" method="POST">
+                    <form action="/cave" method="POST">
                       <input name="cave" type="hidden" value="2">
                       <button type="submit">Find Gold!</button>
                     </form>
@@ -60,7 +60,7 @@
             	<div class="square">
                 	<h2>House</h2>
                     <p>(earns 2-5 gold)</p>
-                    <form action="" method="POST">
+                    <form action="/house" method="POST">
                       <input name="house" type="hidden" value="3">
                       <button type="submit">Find Gold!</button>
                     </form>
@@ -70,7 +70,7 @@
             	<div class="square">
                 	<h2>Casino!</h2>
                     <p>(earns/takes 0-50 gold)</p>
-                    <form action="" method="POST">
+                    <form action="/casino" method="POST">
                       <input name="casino" type="hidden" value="4">
                       <button type="submit">Find Gold!</button>
                     </form>
