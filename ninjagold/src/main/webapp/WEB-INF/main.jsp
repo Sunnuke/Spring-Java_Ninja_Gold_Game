@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix = "c" uri = "http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,18 +19,19 @@
 
 .activity {
   resize: none;
-  height: 100px;
+  height: 200px;
   width: 97%;
   background-color: lightgrey;
   border: 2px solid black;
+  overflow-y: scroll;
 }
 </style>
 </head>
 <body>
-	<div class="container">
+	<div class="container" style="margin-top: 10px";>
 		<div class="row" style="margin-bottom: 30px;">
 			<div class="col-md-4">
-				<h1>Your Gold: <span style="background-color: lightgrey; border: 2px solid black; margin-left: 10px; padding: 0px 20px;"></span></h1>
+				<h1>Your Gold: <span style="background-color: lightgrey; border: 2px solid black; margin-left: 10px; padding: 0px 20px;"><c:out value="${gold}"/></span></h1>
 			</div>
 		</div>
 		
@@ -83,7 +85,7 @@
 		
 		<div class="row">
 			<div class="col-md-4" style="width: 100%;">
-         		<textarea class="activity"></textarea>
+         		<textarea class="activity"><c:out value="${activity}"/></textarea>
 			</div>
 		</div>
 	</div>
